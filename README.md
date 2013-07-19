@@ -10,11 +10,13 @@ Stable tag: 0.1
 
 ## Description
 
-Add sharing icons to the bottom of posts using Font Awesome. Font Awesome
-styles and font files are *not* provided by this plugin; they have to be
-present in the your theme or made available by another plugin. The plugin also
-does not provide any styles. It is up to users to define styles for the
-`.bootstrap-share` and child elements.
+Add sharing icons to the bottom of posts using [Font
+Awesome](http://fortawesome.github.io/Font-Awesome/). 
+
+Font Awesome styles and font files are *not* provided by this plugin; they have
+to be present in the your theme or made available by another plugin. The plugin
+also does not provide any other styles. It is up to users to define styles for
+the `.bootstrap-share` class and child elements.
 
 The options for sharing icons are:
 * Facebook
