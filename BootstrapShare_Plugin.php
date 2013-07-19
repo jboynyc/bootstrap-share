@@ -118,9 +118,8 @@ class BootstrapShare_Plugin extends BootstrapShare_LifeCycle {
       if (is_single()) {
         $url = urlencode(get_permalink());
         $title = urlencode(get_the_title());
-        $msg = urlencode('Check this out!');
         $content .= '<aside class="bootstrap-share" id="sharing-icons">'.PHP_EOL;
-        $content .= '  <h2>Share</h2>'.PHP_EOL;
+        $content .= '  <h2>Share This</h2>'.PHP_EOL;
         $content .= '  <ul>'.PHP_EOL;
         # Facebook share link
         if ($this->getOption('Show_Facebook') == 'true') {
@@ -130,7 +129,7 @@ class BootstrapShare_Plugin extends BootstrapShare_LifeCycle {
         }
         # Twitter share link
         if ($this->getOption('Show_Twitter') == 'true') {
-          $content .= '    <li><a href="http://twitter.com/share?url='.$url.'&text='.$msg.'" target="_blank" title="Share on Twitter">';
+          $content .= '    <li><a href="http://twitter.com/share?url='.$url.'&text='.$title.'" target="_blank" title="Share on Twitter">';
           $content .= '<i class="icon-twitter"></i>';
           $content .= '</a></li>'.PHP_EOL;
         }
