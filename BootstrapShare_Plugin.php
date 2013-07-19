@@ -124,31 +124,31 @@ class BootstrapShare_Plugin extends BootstrapShare_LifeCycle {
         $content .= '  <ul>'.PHP_EOL;
         # Facebook share link
         if ($this->getOption('Show_Facebook') == 'true') {
-          $content .= '    <li><a href="http://www.facebook.com/sharer.php?u='.$url.'&t='.$title.'" title="Share on Facebook">';
+          $content .= '    <li><a href="http://www.facebook.com/sharer.php?u='.$url.'&t='.$title.'" target="_blank" title="Share on Facebook">';
           $content .= '<i class="icon-facebook"></i>';
           $content .= '</a></li>'.PHP_EOL;
         }
         # Twitter share link
         if ($this->getOption('Show_Twitter') == 'true') {
-          $content .= '    <li><a href="http://twitter.com/share?url='.$url.'&text='.$msg.'" title="Share on Twitter">';
+          $content .= '    <li><a href="http://twitter.com/share?url='.$url.'&text='.$msg.'" target="_blank" title="Share on Twitter">';
           $content .= '<i class="icon-twitter"></i>';
           $content .= '</a></li>'.PHP_EOL;
         }
         # G+ share link
         if ($this->getOption('Show_GooglePlus') == 'true') {
-          $content .= '    <li><a href="https://plus.google.com/share?url='.$url.'" title="Share on Google Plus">';
+          $content .= '    <li><a href="https://plus.google.com/share?url='.$url.'" target="_blank" title="Share on Google Plus">';
           $content .= '<i class="icon-google-plus"></i>';
           $content .= '</a></li>'.PHP_EOL;
         }
         # LinkedIn share link
         if ($this->getOption('Show_LinkedIn') == 'true') {
-          $content .= '    <li><a href="http://www.linkedin.com/shareArticle?mini=true&url='.$url.'&title='.$title.'" title="Share on LinkedIn">';
+          $content .= '    <li><a href="http://www.linkedin.com/shareArticle?mini=true&url='.$url.'&title='.$title.'" target="_blank" title="Share on LinkedIn">';
           $content .= '<i class="icon-linkedin"></i>';
           $content .= '</a></li>'.PHP_EOL;
         }
         # Pinterest share link
         if ($this->getOption('Show_Pinterest') == 'true') {
-          $content .= '    <li><a href="http://pinterest.com/pin/create/button/?url='.$url.'&media=&description='.$title.'" title="Share on Pinterest">';
+          $content .= '    <li><a href="http://pinterest.com/pin/create/button/?url='.$url.'&media=&description='.$title.'" target="_blank" title="Share on Pinterest">';
           $content .= '<i class="icon-pinterest"></i>';
           $content .= '</a></li>'.PHP_EOL;
         }
