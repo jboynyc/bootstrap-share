@@ -119,7 +119,7 @@ class BootstrapShare_Plugin extends BootstrapShare_LifeCycle {
         $url = urlencode(get_permalink());
         $title = urlencode(get_the_title());
         $content .= '<aside class="bootstrap-share" id="sharing-icons">'.PHP_EOL;
-        $content .= '  <h2>Share This</h2>'.PHP_EOL;
+        $content .= '  <h3>Share This</h3>'.PHP_EOL;
         $content .= '  <ul>'.PHP_EOL;
         # Facebook share link
         if ($this->getOption('Show_Facebook') == 'true') {
